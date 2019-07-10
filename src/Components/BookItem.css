@@ -1,0 +1,13 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.bookContainer {
+    border: 0.1em solid black;
+    padding: 1em;
+    margin: 1em;
+    text-Align: center;
+    width: 30em;
+}
