@@ -1,20 +1,34 @@
 import React from 'react';
 
 class SearchBar extends React.Component {
+    state = {
+        value: " "
+    }
+
+    onChangeHandler = e => {
+        this.setState({
+            value: e.target.value
+        });
+    };
+
+
+    onFormSubmit = (e) => {
+        e.preventDefault();
+        this.props.onFormSubmit(this.state.value)
+    }
+
     render() {
         return (
-            <div className="container">
-                <form>
-                    <div className="form-group">
-                        <label>Search Books</label>
-                        <input type="text" className="form-control" name="book"></input>
-                    </div>
-                    <div className="form-group">
-                        <label>Search Author</label>
-                        <input type="text" className="form-control" name="author"></input>
-                    </div>
-                </form>
-            </div>
+            <form onSubmit={this.onFormSubmit}>
+                <div className="form-group">
+                    <input style={{ width: '18em' , marginTop: 10}}
+                        className="form-control searchField"
+                        type="text" 
+                        placeholder="Find Books..." 
+                        onChange={this.onChangeHandler}
+                    />
+                </div>
+            </form>
         )
     }
 }

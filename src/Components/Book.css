@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    flex-direction: row;    
+}
+
+.navbar, .footer {
+    background-color: rgb(238, 212, 247);
+}
+
+.logo,
+.footer {
+    background:
+        -webkit-repeating-linear-gradient(-45deg,
+        rgb(126, 34, 126),
+        rgb(216, 110, 226) 20px,
+        rgb(73, 52, 71) 20px,
+        rgb(194, 6, 241) 40px,
+        rgb(242, 226, 243) 40px);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.searchField{
+    box-shadow:
+        0pt 2px 5px rgba(231, 203, 241, 0.7),
+        0px 0px 8px 5px rgba(241, 3, 241, 0.4) inset;
+    border-radius: 5px;
+    background: rgb(247, 247, 247);
+}
+
+.bookContainer {
+    box-shadow:
+        0pt 2px 5px rgba(236, 180, 232, 0.7),
+        0px 0px 8px 5px rgba(240, 155, 240, 0.4) inset;
+    border-radius: 5px;
+    background: rgb(247, 247, 247);
+}
+
+.booklist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.bookContainer {
+    padding: 1em;
+    margin: 1em;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+button {
+    width: 8em;
+    box-shadow:
+        0pt 2px 5px rgba(145, 204, 224, 0.7),
+        0px 0px 8px 5px rgba(34, 82, 92, 0.4) inset;
+    border-radius: 5px;
+    background: rgb(247, 247, 247);
+}
